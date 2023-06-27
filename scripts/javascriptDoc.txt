@@ -1,0 +1,9 @@
+index.js 
+-----------------
+
+This js File contains getFileContent function that read file path text with jquery and 
+send ajax request to get file content.
+
+- then draw response in frontend div,and set next step button index to start from next page if we click.
+- also handle other same pagination links indexes.
+

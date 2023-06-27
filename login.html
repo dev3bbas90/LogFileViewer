@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log File Viewer</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="" method="post">
+            <div class="form-container">
+                <div class="form-sections mb">
+                    <div class="heading-container">
+                        <h1 class="heading">Login</h1>
+                    </div>
+                </div>
+
+                <span id="message" class="w-100 pt-3 text-center fs-4"> </span>
+
+                <div class="form-sections">
+                    <div class="form-fields">
+                        <label for="username">Username</label>
+                        <input type="text" name="user_name" id="username" class="input-field" tabindex="1" required />
+                        <span>Test/ admin:admin</span>
+                    </div>
+                    <div class="form-fields">
+                        <label for="pass">Password</label>
+                        <div id="pass-field-container">
+                            <input type="password" name="password" id="pass" class="input-field" required tabindex="2" />
+                            <span>Test/ admin:admin</span>
+                            <input type="checkbox" id="see" class="input-field" title="Click to view password" tabindex="3" />
+                        </div>
+                    </div>
+
+                    <div class="form-fields">
+                        <input type="submit" value="Log In" class="login-btn" tabindex="4" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/9dd7c9e056.js" crossorigin="anonymous"></script>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>

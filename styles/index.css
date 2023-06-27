@@ -1,0 +1,13 @@
+    .counter-column {
+        background-color: rgba(0, 0, 0, .05);
+    }
+    
+    #response {
+        white-space: nowrap;
+        overflow-x: auto;
+        min-height: 100%;
+    }
+    
+    .test-row {
+        height: 100vh;
+    }

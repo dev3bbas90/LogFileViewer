@@ -1,0 +1,12 @@
+About Log File Viewer
+* class File 
+    accept 3 parameters : $file , $start , $paginate
+        $file : the file nam that you want to read its content
+        $start : start index
+        $paginate : page size
+    * get_file_lines
+        check if File Exsists  and return  paginated content
+    
+* callFileObject function
+    create file object
+    

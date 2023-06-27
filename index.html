@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log File Viewer</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+</head>
+
+<body>
+    <h2 class="text-center mt-2 mb-5">Log File Viewer</h2>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-12 row">
+            <div class="col-md-10 col-12">
+                <form action="">
+                    <input type="text" name="file" id="file" class="form-control" placeholder="/path/to/file">
+                </form>
+                <small> Test By | content/file.txt (600 KB) (✔)</small>
+                <br>
+                <small> Test By | content/laravel.log  (+3 MB) (❌) </small>
+            </div>
+            <div class="col-md-2 col-12 px-3">
+                <button class="btn btn-sm btn-primary font-weight-bold w-100 paginate start " data-start="0">view</button>
+            </div>
+            <div class="col-md-12 col-12 row my-4">
+                <div class="col-1 counter-column text-center font-weight-bold py-3 border">
+                    <p class="index-p font-weight-bold">1</p>
+                    <p class="index-p font-weight-bold">2</p>
+                    <p class="index-p font-weight-bold">3</p>
+                    <p class="index-p font-weight-bold">4</p>
+                    <p class="index-p font-weight-bold">5</p>
+                    <p class="index-p font-weight-bold">6</p>
+                    <p class="index-p font-weight-bold">7</p>
+                    <p class="index-p font-weight-bold">8</p>
+                    <p class="index-p font-weight-bold">9</p>
+                    <p class="index-p font-weight-bold">10</p>
+                </div>
+                <div class="col-11 py-3 border">
+                    <div id="response"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-12 row text-center">
+                <div class="col-3 border paginate start" role="button" data-start="0">
+                    <i class="fa fa-backward-step"></i>
+                </div>
+                <div class="col-3 border paginate previous" role="button" data-start="0">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="col-3 border paginate next" role="button" data-start="10">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="col-3 border paginate end" role="button" data-start="0">
+                    <i class="fa fa-forward-step"></i>
+                    <i class="fa fa-arrow-right-to-line"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/9dd7c9e056.js" crossorigin="anonymous"></script>
+    <script src="scripts/index.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
